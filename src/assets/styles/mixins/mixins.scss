@@ -1,0 +1,39 @@
+@mixin flex($justifyContent) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: center;
+}
+
+@mixin grid($cols2, $cols3) {
+  display: grid;
+  grid-template-columns: 30% $cols2 $cols3;
+  gap: 50px;
+}
+
+@mixin respond-to($media) {
+  @if $media == 1200px {
+    @media only screen and (max-width: $large) {
+      @content;
+    }
+  }
+  @if $media == 991px {
+    @media only screen and (max-width: $medium) {
+      @content;
+    }
+  }
+  @if $media == 769px {
+    @media only screen and (max-width: $tablet) {
+      @content;
+    }
+  }
+  @if $media == 480px {
+    @media only screen and (max-width: $largeMobDev) {
+      @content;
+    }
+  }
+  @if $media == 445px {
+    @media only screen and (max-width: $mediumMobDev) {
+      @content;
+    }
+  }
+}
