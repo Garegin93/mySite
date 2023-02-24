@@ -2,7 +2,8 @@
   <nav class="navigation mobile-menu-wrapper">
     <div class="mobile-menu-close"
          @click="closeMobileMenu"></div>
-    <menu class="menu mobile-menu">
+    <menu class="menu mobile-menu"
+          @click="skipMobileMenu">
       <li class="menu__item mobile-menu__item"><a href="#hello"
                                                   class="menu__link">Привет</a></li>
       <li class="menu__item mobile-menu__item"><a href="#mySkills"
@@ -26,6 +27,11 @@ export default {
   methods: {
     closeMobileMenu() {
       this.$store.commit("closeMobileMenu")
+    },
+    skipMobileMenu(event) {
+      let target = event.target
+      if (target.tagName !== "A") return;
+      this.closeMobileMenu()
     }
   }
 }
@@ -107,6 +113,10 @@ export default {
 
   .menu__link {
     color: $colorWhite;
+
+    &:hover {
+      color: $colorBlack;
+    }
   }
 
   .mobile-menu-close {
