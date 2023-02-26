@@ -61,7 +61,7 @@ p, span {
   background-color: $colorBtnBlue;
   text-decoration: none;
   color: $colorWhite;
-  box-sizing: content-box;
+  box-sizing: border-box;
 
   &:hover {
     box-shadow: 10px 10px 20px rgb(51, 51, 255, 20%);
