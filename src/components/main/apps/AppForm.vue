@@ -1,20 +1,25 @@
 <template>
   <div class="form-container">
-    <form action="#"
+    <form action="../../../../send.php"
+          id="contact"
           class="contact__form"
           method="post">
       <div class="inputs-container">
         <input type="text"
+               id="name"
                name="name"
                placeholder="Имя"
                required>
         <input type="text"
+               id="email"
                name="email"
                placeholder="Эл. адрес"
                required>
       </div>
       <div class="textarea-container">
-                <textarea placeholder="Сообщение"
+                <textarea id="msg"
+                          placeholder="Сообщение"
+                          name="msg"
                           required></textarea>
       </div>
       <input type="submit"
