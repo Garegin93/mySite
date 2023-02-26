@@ -24,6 +24,7 @@
 import AppMobileMenu from "@/components/header/apps/AppMobileMenu";
 
 export default {
+
   components: {AppMobileMenu}
 }
 </script>

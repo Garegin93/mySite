@@ -25,6 +25,7 @@
 <script>
 
 export default {
+
   methods: {
     closeMobileMenu() {
       this.$store.commit("closeMobileMenu")

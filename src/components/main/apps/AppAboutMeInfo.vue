@@ -31,6 +31,7 @@ import AppIconInstagram from "@/components/main/apps/appIcons/AppIconInstagram";
 import AppIconGithub from "@/components/main/apps/appIcons/AppIconGithub";
 
 export default {
+
   components: {AppIconTelegram, AppIconVk, AppIconInstagram, AppIconGithub}
 }
 </script>

@@ -20,6 +20,7 @@ import AppFeedback from "@/components/main/apps/AppFeedback";
 import AppContact from "@/components/main/apps/AppContact";
 
 export default {
+
   components: {
     AppAboutMe,
     AppSkills,
@@ -34,6 +35,7 @@ export default {
 
 <style scoped
        lang="scss">
+
 @import "../../style";
 
 .main {

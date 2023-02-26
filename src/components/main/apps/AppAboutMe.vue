@@ -21,7 +21,7 @@
       </div>
       <img class="about-me__img"
            src="../../../assets/images/my_photo.jpg"
-           alt="My photo"
+           alt="My photo."
            width="450"
            height="300">
     </div>
@@ -29,28 +29,34 @@
 </template>
 
 <script>
+
 import AppAboutMeInfo from "@/components/main/apps/AppAboutMeInfo";
 
 export default {
+
   computed: {
     aboutMeTitle() {
       return this.$store.state.aboutMeTitle
     },
+
     aboutMeDescription() {
       return this.$store.state.aboutMeDescription
     }
   },
+
   methods: {
     openModalFormBtn() {
       this.$store.commit("openModalForm")
     }
   },
+
   components: {AppAboutMeInfo}
 }
 </script>
 
 <style scoped
        lang="scss">
+
 @import "../../../style.scss";
 
 .about-me {

@@ -17,6 +17,7 @@ import AppLogoSvg from "@/components/header/apps/AppLogoSvg";
 import AppNavigation from "@/components/header/apps/AppNavigation";
 
 export default {
+
   methods: {
     openMobileMenu() {
       this.$store.commit("openMobileMenu")

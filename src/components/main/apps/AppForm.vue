@@ -30,6 +30,7 @@ export default {}
 
 <style scoped
        lang="scss">
+
 @import "../../../style.scss";
 
 .form-container {

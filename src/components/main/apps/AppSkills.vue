@@ -33,12 +33,14 @@
 import AppIconTag from "@/components/main/apps/appIcons/AppIconTag";
 
 export default {
+
   components: {AppIconTag}
 }
 </script>
 
 <style scoped
        lang="scss">
+
 @import "../../../style.scss";
 
 .skills {

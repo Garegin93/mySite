@@ -20,7 +20,6 @@ export default {
 
 @import "src/assets/styles/general-options/general-options.scss";
 
-
 @font-face {
   font: {
     family: "Lato";

@@ -47,6 +47,7 @@
 </template>
 
 <script>
+
 import AppIconTag from "@/components/main/apps/appIcons/AppIconTag";
 import {mapState} from "vuex";
 
@@ -67,6 +68,7 @@ export default {
       "thirdArticlePosition"
     ])
   },
+
   components: {AppIconTag}
 }
 
@@ -74,6 +76,7 @@ export default {
 
 <style scoped
        lang="scss">
+
 @import "../../../style.scss";
 
 .feedback {

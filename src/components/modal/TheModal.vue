@@ -18,15 +18,18 @@
 </template>
 
 <script>
+
 import AppForm from "@/components/main/apps/AppForm";
 
 export default {
+
   methods: {
     closeModalForm() {
       let modal = document.querySelector(".modal__contact");
       modal.style.display = "none";
     }
   },
+
   components: {
     AppForm
   }
@@ -35,6 +38,7 @@ export default {
 
 <style scoped
        lang="scss">
+
 @import "../../style.scss";
 
 .modal {

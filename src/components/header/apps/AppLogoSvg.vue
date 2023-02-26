@@ -28,6 +28,7 @@ export default {}
 
 <style scoped
        lang="scss">
+
 @import "../../../style.scss";
 
 .menu__link {

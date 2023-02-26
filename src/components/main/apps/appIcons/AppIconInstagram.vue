@@ -16,9 +16,7 @@
 </template>
 
 <script>
-export default {
-  name: "AppIconInstagram"
-}
+export default {}
 </script>
 
 <style scoped>

@@ -24,10 +24,12 @@
 </template>
 
 <script>
+
 import AppIconTag from "@/components/main/apps/appIcons/AppIconTag";
 import {mapState} from "vuex"
 
 export default {
+
   computed: {
     ...mapState([
       "experienceTitle",
@@ -38,6 +40,7 @@ export default {
       "experienceItDescription"
     ])
   },
+
   components: {AppIconTag}
 
 }
@@ -45,6 +48,7 @@ export default {
 
 <style scoped
        lang="scss">
+
 @import "../../../style.scss";
 
 .experience {

@@ -17,6 +17,7 @@
 </template>
 
 <script>
+
 import AppIconTag from "@/components/main/apps/appIcons/AppIconTag";
 import AppForm from "@/components/main/apps/AppForm";
 
@@ -29,6 +30,7 @@ export default {
       "contactDescription"
     ])
   },
+
   components: {
     AppIconTag,
     AppForm
@@ -38,6 +40,7 @@ export default {
 
 <style scoped
        lang="scss">
+
 @import "../../../style.scss";
 
 .contact {

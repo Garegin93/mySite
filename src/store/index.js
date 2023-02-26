@@ -54,7 +54,6 @@ export default createStore({
         contactTitle: "Контакты",
         contactDescription: "Вы работаете над чем-то большим? Я хотел бы помочь вам в реализации задач. Напишите мне письмо и начните свой проект прямо сейчас! Просто сделай это.",
     },
-    getters: {},
     mutations: {
 
         //=====header
@@ -76,6 +75,4 @@ export default createStore({
             modal.style.display = "block"
         }
     },
-    actions: {},
-    modules: {}
 })
