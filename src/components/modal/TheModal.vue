@@ -59,7 +59,7 @@ export default {
 
   &__wrapper {
     flex-direction: column;
-    padding: 50px;
+    padding: 80px 40px;
     position: relative;
     max-width: 850px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

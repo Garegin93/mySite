@@ -14,8 +14,8 @@
              @click="openModalFormBtn"
           >Свяжитесь со мной</a>
           <a class="about-me__btn_downloadCV btn"
-             href="../../../assets/resume"
-             download="resume_barsegyan.pdf"
+             href="../../../assets/files/resume_barsegyan.pdf"
+             download
           >Скачать резюме</a>
         </div>
       </div>

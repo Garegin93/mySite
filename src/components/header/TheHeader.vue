@@ -3,8 +3,10 @@
     <div class="header__container">
       <div class="mobile-navigation">
         <h2 class="mobile-title">Гарегин</h2>
-        <div class="burger-menu-btn"
-             @click="openMobileMenu"></div>
+        <div class="burger-menu"
+             @click="openMobileMenu">
+          <div class="burger-menu-btn"></div>
+        </div>
       </div>
       <app-logo-svg></app-logo-svg>
       <app-navigation></app-navigation>
@@ -53,14 +55,21 @@ export default {
   display: none;
 }
 
+.burger-menu {
+  position: relative;
+  width: 60px;
+  height: 50px;
+  padding: 25px;
+}
+
 .burger-menu-btn,
 .burger-menu-btn:after,
 .burger-menu-btn:before {
-  position: relative;
+  position: absolute;
   width: 40px;
   height: 5px;
   background-color: $colorBlack;
-  cursor: pointer;
+  right: 0;
 }
 
 .burger-menu-btn:after {
@@ -92,6 +101,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: relative;
   }
 }
 

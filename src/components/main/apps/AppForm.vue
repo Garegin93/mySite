@@ -51,8 +51,7 @@ export default {}
     font-size: 12px;
     grid-column: 2/3;
     max-width: 200px;
-    display: flex;
-    justify-content: center;
+    @include flex(center);
     justify-self: flex-end;
   }
 }

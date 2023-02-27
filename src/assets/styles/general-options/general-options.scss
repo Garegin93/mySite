@@ -2,11 +2,15 @@
 
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -57,11 +61,14 @@ p, span {
   text-align: center;
   border: none;
   border-radius: 30px;
-  padding: 15px;
   background-color: $colorBtnBlue;
   text-decoration: none;
   color: $colorWhite;
   box-sizing: border-box;
+  padding: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
   &:hover {
     box-shadow: 10px 10px 20px rgb(51, 51, 255, 20%);

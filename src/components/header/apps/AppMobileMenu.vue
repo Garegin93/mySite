@@ -1,7 +1,9 @@
 <template>
   <nav class="mobile-menu-wrapper">
-    <div class="mobile-menu-close"
-         @click="closeMobileMenu"></div>
+    <div class="menu-close"
+         @click="closeMobileMenu">
+      <div class="mobile-menu-close"></div>
+    </div>
     <menu class="mobile-menu"
           @click="skipMobileMenu">
       <li class="mobile-menu__item"><a href="#hello"
@@ -48,73 +50,76 @@ export default {
 
 .mobile-menu-wrapper {
   display: none;
-  font-family: "Lato-Bold", sans-serif;
-}
-
-.mobile {
-
-  &__link {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $colorWhite;
-    transition: .2s ease-in-out;
-
-    &:hover {
-      color: $colorBlack
-    }
-  }
 }
 
 @include respond-to(991px) {
 
-  .mobile-menu-wrapper {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    z-index: 4;
-    transition: transform 0.3s ease;
-    transform: translateY(-100%);
-    padding: 0 20px;
-    background-color: $colorBtnBlue;
-  }
+  .mobile {
 
-  .mobile-menu {
-    padding: 15px 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    list-style: none;
+    &__link {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $colorWhite;
+      transition: .2s ease-in-out;
 
-    &__item {
-      padding: 20px;
+      &:hover {
+        color: $colorBlack
+      }
+    }
+
+    &-menu {
+      padding: 15px 0;
+      margin: 0;
+      list-style: none;
+
+      &__item {
+        padding: 20px;
+      }
+
+      &-wrapper {
+        font-family: "Lato-Bold", sans-serif;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        z-index: 4;
+        transition: transform 0.3s ease;
+        transform: translateY(-100%);
+        padding: 0 20px;
+        background-color: $colorBtnBlue;
+      }
+
+      &-close {
+        position: absolute;
+        width: 40px;
+        height: 5px;
+        background-color: #ffffff;
+        transform: rotate(45deg);
+        top: 30px;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 5px;
+          background-color: #ffffff;
+          left: 0;
+          transform: rotate(-90deg);
+        }
+      }
     }
   }
 
-  .mobile-menu-close {
-    position: relative;
-    width: 40px;
-    height: 5px;
-    background-color: #ffffff;
-    transform: rotate(45deg);
+  .menu-close {
+    width: 60px;
+    height: 70px;
     margin-left: auto;
-    top: 30px;
-    cursor: pointer;
-
-    &:after {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 5px;
-      background-color: #ffffff;
-      left: 0;
-      transform: rotate(-90deg);
-    }
+    padding: 10px;
+    position: relative;
+    top: 0;
   }
 }
 </style>
