@@ -61,6 +61,7 @@ export default {
       text-decoration: none;
       color: $colorWhite;
       transition: .2s ease-in-out;
+      padding: 15px;
 
       &:hover {
         color: $colorBlack
@@ -71,6 +72,10 @@ export default {
       padding: 15px 0;
       margin: 0;
       list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      height: 100vh;
 
       &__item {
         padding: 20px;
@@ -83,7 +88,6 @@ export default {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
         text-align: center;
         z-index: 4;
         transition: transform 0.3s ease;
@@ -120,6 +124,19 @@ export default {
     padding: 10px;
     position: relative;
     top: 0;
+    z-index: 5;
+  }
+}
+
+@media screen and (max-width: 991px) and (orientation: landscape) {
+  .mobile-menu {
+    justify-content: center;
+    position: relative;
+    bottom: 70px;
+
+    &__item {
+      padding: 15px;
+    }
   }
 }
 </style>

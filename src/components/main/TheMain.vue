@@ -44,7 +44,7 @@ export default {
 
 @include respond-to(991px) {
   .main {
-    padding-top: 80px;
+    padding-top: 70px;
   }
 }
 </style>

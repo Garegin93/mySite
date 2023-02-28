@@ -93,7 +93,7 @@ export default {
 
 @include respond-to(991px) {
   .header {
-    padding: 10px 60px;
+    padding: 0 60px;
   }
 
   .mobile-navigation {
@@ -110,7 +110,7 @@ export default {
     padding: 10px 30px;
 
     &__container {
-      padding: 15px 0;
+      padding: 0;
     }
   }
 }

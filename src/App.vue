@@ -63,7 +63,7 @@ export default {
 
 @include respond-to(991px) {
   html {
-    scroll-padding-top: 60px;
+    scroll-padding-top: 70px;
   }
 
   body {
