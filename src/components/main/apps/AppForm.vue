@@ -10,7 +10,7 @@
                name="name"
                placeholder="Имя"
                required>
-        <input type="text"
+        <input type="email"
                id="email"
                name="email"
                placeholder="Эл. адрес"
@@ -62,7 +62,8 @@ export default {}
   justify-content: space-between;
   box-sizing: border-box;
 
-  & > input[type="text"] {
+  & > input[type="text"],
+  & > input[type="email"] {
     height: 50px;
     width: 100%;
     border: 1px solid $borderColor;
@@ -74,7 +75,9 @@ export default {}
   }
 
   & > input[type="text"]:hover,
-  & > input[type="text"]:focus, {
+  & > input[type="text"]:focus,
+  & > input[type="email"]:hover,
+  & > input[type="email"]:focus, {
     border: 1px solid $colorBtnBlue;
   }
 }
@@ -108,7 +111,8 @@ export default {}
     display: block;
   }
 
-  .inputs-container > input[type="text"] {
+  .inputs-container > input[type="text"],
+  .inputs-container > input[type="email"] {
     margin-bottom: 20px;
   }
 }

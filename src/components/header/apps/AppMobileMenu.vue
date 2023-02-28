@@ -132,7 +132,7 @@ export default {
   .mobile-menu {
     justify-content: center;
     position: relative;
-    bottom: 70px;
+    bottom: 85px;
 
     &__item {
       padding: 15px;
