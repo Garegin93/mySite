@@ -4,6 +4,7 @@ export default createStore({
     state: {
 
         //=====main
+
         //===== aboutMeInfo
 
         aboutMeTitle: "Я Барсегян Гарегин",
@@ -31,6 +32,20 @@ export default createStore({
         experienceWebDevDescription: "Спроектирован и разработан удобный веб-сайт, в том числе оптимизированная страница оформления заказа, которая увеличила число кликов пользователей и, следовательно, количество покупок клиентов на 20%.",
         experienceItDescription: "Был улучшен код сайта с целью внедрения новых технологий. Была улучшена производительность, логика и стиль сайта.",
 
+        //=====appEducation
+
+        educationTitle: "Образование",
+        educationGeekTitle: "GeekBrains, frontend-разработка.",
+        educationHtmlTitle: "HTML и CSS. Профессиональная вёрстка сайтов.",
+        educationVueTitle: "Профессиональная разработка на Vue.js",
+        educationDescription: "Всю свою жизнь я был движим твердой верой в важность образования. Я стараюсь узнавать что-то новое каждый божий день.",
+        educationGeekDescription: "В 2021 году прошел полный курс от GeekBrains, frontend-разработка. Один из лучших курсов по IT обучению. Методичный подход, хорошие преподаватели, полный профессионализм.",
+        educationHtmlDescription: "В 2022 году прошел курсы по повышению квалификации по профессиональной верстке сайтов. Благодаря уникальной системе обучения данного курса, я узнал много нового, и теперь могу сказать, что уверенно владею HTML и CSS.",
+        educationVueDescription: "В 2022 году окончил курс по профессиональной разработке на фреймворке vue.js. Мне очень нравится методичный подход автора данного курса. Хорошая подача информации и подробный рассказ о всех преимуществах данного фреймворка.",
+        educationGeekSpan: "Mail Group",
+        educationHtmlSpan: "HTML Academy",
+        educationVueSpan: "Владилен Минин",
+
         //=====appFeedback
 
         feedbackTitle: "Отзывы",
@@ -49,11 +64,13 @@ export default createStore({
         firstArticlePosition: "Фрилансер",
         secondArticlePosition: "Джуниор python-разработчик",
         thirdArticlePosition: "Владелец интернет магазина \"БОГЕМКА АРТ\"",
+
         //=====appContact
 
         contactTitle: "Контакты",
         contactDescription: "Вы работаете над чем-то большим? Я хотел бы помочь вам в реализации задач. Напишите мне письмо и начните свой проект прямо сейчас! Просто сделай это.",
     },
+
     mutations: {
 
         //=====header
