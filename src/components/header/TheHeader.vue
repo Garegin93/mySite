@@ -15,6 +15,7 @@
 </template>
 
 <script>
+
 import AppLogoSvg from "@/components/header/apps/AppLogoSvg";
 import AppNavigation from "@/components/header/apps/AppNavigation";
 

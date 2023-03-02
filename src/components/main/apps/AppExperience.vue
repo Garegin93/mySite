@@ -9,7 +9,7 @@
       <div class="experience__webDev">
         <h3 class="experience__title inner-title">{{ experienceWebDevTitle }}</h3>
         <span>Анонимный клиент</span>
-        <p class="experience__description">{{ experienceItDescription }}</p>
+        <p class="experience__description">{{ experienceWebDevDescription }}</p>
       </div>
       <div class="experience__image img">
         <app-icon-tag></app-icon-tag>
