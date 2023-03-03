@@ -32,6 +32,7 @@ export default {}
 @import "../../../style.scss";
 
 .menu__link {
+  transition: 0.3s all;
   color: $colorBlack;
   padding: 0;
 

@@ -23,15 +23,15 @@ $msg = trim($msg);
 // Отправляем данные на почту
 
 if (mail("garikbarsegyan93@mail.ru",
-"Новое письмо с сайта",
+"Новое письмо с моего сайта",
 "Имя: ".$name."\n".
 "email: ".$email."\n".
 "Сообщение: ".$msg."\n",
 "FROM: no-reply@mydomain.ru \r\n")
 ) {
-    echo ("Письмо успешно отправлено!");
+    echo ("<strong style='font-size: 24px'>Письмо успешно отправлено</strong>!");
 } else {
-   echo ("Есть ошибки! Проверьте данные...");
+   echo ("<span style='font-size: 24px'>Есть ошибки! Проверьте данные...</span>");
 }
 
 ?>

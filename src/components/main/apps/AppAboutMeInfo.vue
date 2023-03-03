@@ -10,7 +10,7 @@
     </p>
     <p>
       <span class="span-title">Адрес:</span>
-      <span>398046, г. Липецк, пр. Победы, д. 106а. кв.66</span>
+      <span>398046, г. Липецк, пр. Победы, д. 106а, кв.66</span>
     </p>
     <p>
       <span class="span-title">Соцсети:</span>
