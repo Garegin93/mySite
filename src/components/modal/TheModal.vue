@@ -7,9 +7,7 @@
           <button class="modal__closeBtn"
                   @click="closeModalForm"></button>
           <h2 class="contact__title main__title">Давайте вместе поработаем!</h2>
-          <p class="contact__description">Вы работаете над чем-то большим? Я хотел бы помочь вам в реализации
-            задач.
-            Напишите мне письмо и начните свой проект прямо сейчас! Просто сделай это.</p>
+          <p class="contact__description">{{ contactDescription }}</p>
         </div>
       </div>
       <app-form></app-form>
@@ -20,6 +18,7 @@
 <script>
 
 import AppForm from "@/components/main/apps/AppForm";
+import {mapState} from "vuex";
 
 export default {
 
@@ -32,6 +31,12 @@ export default {
 
   components: {
     AppForm
+  },
+
+  computed: {
+    ...mapState([
+      "contactDescription"
+    ])
   }
 }
 </script>
